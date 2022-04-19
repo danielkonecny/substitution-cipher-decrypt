@@ -1,0 +1,16 @@
+# Projekt č. 1 - Prolomení šifry - řešení
+
+Autor: Daniel Konečný (xkonec75)
+Datum: 19. 4. 2022
+
+## Název použité šifry
+
+
+## Tajný klíč
+
+
+## Zadaný text v dešifrované podobě
+The whole neighborhood abounds with local tales, haunted spots, and twilight superstitions; stars shoot and meteors glare oftener across the valley than in any other part of the country, and the night
+
+## Postup řešení
+
