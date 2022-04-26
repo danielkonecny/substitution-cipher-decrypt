@@ -1,16 +1,20 @@
 # Projekt č. 1 - Prolomení šifry - řešení
 
 Autor: Daniel Konečný (xkonec75)
-Datum: 19. 4. 2022
+Datum: 26. 4. 2022
 
 ## Název použité šifry
-
+Playfair, I a J sjednocené, zdvojená písmena vyplněna X.
 
 ## Tajný klíč
-
+GERIYPACHNWQSUVKOXFDTMZBL
 
 ## Zadaný text v dešifrované podobě
-The whole neighborhood abounds with local tales, haunted spots, and twilight superstitions; stars shoot and meteors glare oftener across the valley than in any other part of the country, and the night
+The whole neighborhood abounds with local tales, haunted spots, and twilight superstitions; stars shoot and meteors glare oftener across the valley than in any other part of the country, and the nightmare with her whole nine-fold seems to make it the favorite scene of her gambols. The dominant spirit however that haunts this enchanted region and seems to be commander in chief of all the powers of the air is the apparition of a figure on horse back without a head. It is said by some to be the ghost of a hessian trooper whose head had been carried away by a cannonball in some nameless battle during the revolutionary war and who is ever and a non-seen by the country folk hurrying along in the gloom of night as if on the wings of the wind his haunts are not confined to the valley but extend at times to the adjacent roads and especially to the vicinity of a church at no great distance.
 
 ## Postup řešení
+Odkazuji se na iPython notebook, který jsem bohužel nemohl k odevzdanému souboru přiložit, dávám na něj tedy odkaz [zde](https://github.com/danielkonecny/substitution-cipher-decrypt/blob/master/xkonec75.ipynb). Prováděl jsem v něm veškerou analýzu šifry.
 
+1. Šifru jsem odhadl za pomocí nápověd u zadání a poté si poznatek ověřil na základě analýzy zadaného textu a šifry. Jednotlivá písmena se zakódovávala do různých písmen, dvojice písmen však už vycházely ideálně, každá se zakódovala pouze do jedné jiné dvojice. Nepovedlo se mi to však napoprvé, bylo třeba ještě správně vyřešit stejná písmena v digramech a odstranění dodatečných znaků.
+2. Dvojice, které známe, nestačily na vyřešení šifry. Nechal jsem si tedy vypsat několik pomocných párů digramů, na základě kterých jsem ručně sestavil mřížku s klíčem.
+3. Poté jsem napsal funkci, která text pomocí klíče dešifruje. Nakonec jsem řešení už jen ručně naformátoval.
